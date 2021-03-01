@@ -9,4 +9,5 @@ class LoginHome(View):
     def get(self, request):
         # logic
         return render(request, self.template_name)
+
     

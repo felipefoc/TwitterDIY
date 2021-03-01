@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,6 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '%tf-dei*mug)(o1g2r$%os%kc__0)t=2kuy0e3s27(!&m8g1%s'
+ELEPHANTSQL_PASS = os.environ.get('ELEPHANTSQL_PASS')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -78,12 +80,11 @@ WSGI_APPLICATION = 'django_twitter.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        # 'NAME': os.path.join(BASE_DIR, 'mydb'),
-        'USER': 'postgres',
-        'PASSWORD': 'focland0',
-        'HOST': 'localhost',
-        'PORT': '', # 8000 is default
+        'NAME': 'ejdshjav',
+        'USER': 'ejdshjav',
+        'PASSWORD': f'{ELEPHANTSQL_PASS}',
+        'HOST': 'tuffi.db.elephantsql.com',
+        'PORT': '5432',
     }
 }
 
