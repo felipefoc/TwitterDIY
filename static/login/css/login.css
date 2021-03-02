@@ -112,3 +112,13 @@ li a:hover {
 .modal-backdrop.show {
     opacity: .3;
 }
+.form-select {
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    width: auto;
+    margin-right: 12px;
+}
+.birth {
+    display: block ruby;
+    padding: 5px;
+}
