@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'login',
+    'account',
 ]
 
 MIDDLEWARE = [
@@ -80,8 +81,8 @@ WSGI_APPLICATION = 'django_twitter.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ejdshjav',
-        'USER': 'ejdshjav',
+        'NAME': 'temwwrug',
+        'USER': 'temwwrug',
         'PASSWORD': f'{ELEPHANTSQL_PASS}',
         'HOST': 'tuffi.db.elephantsql.com',
         'PORT': '5432',
@@ -91,6 +92,8 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
+
+AUTH_USER_MODEL = 'account.CustomUser'
 
 AUTH_PASSWORD_VALIDATORS = [
     {

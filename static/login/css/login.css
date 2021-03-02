@@ -33,6 +33,10 @@ figure {
     width: 40px;
     height: 32px;
 }
+#logoModal {
+    width: 40px;
+    height: 32px;
+}
 .right {
     position: fixed;
     top: 15px;
@@ -96,4 +100,15 @@ li a {
 }
 li a:hover {
     color: gray;    
+}
+.modal-content {
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+}
+.modal-backdrop {
+    background-color: #6c6969;
+}
+.modal-backdrop.show {
+    opacity: .3;
 }

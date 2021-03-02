@@ -48,6 +48,7 @@
         <h1>Happening now</h1><br>
         <p id="join">Join Twitter today.</p><br>
         <a href="#"><button id="sign" type="button" class="btn btn-primary btn-lg">Sign Up</button></a>
+        
       </div>      
     </div>
   </div>
@@ -109,7 +110,17 @@
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    
-  
+  <script
+			  src="https://code.jquery.com/jquery-3.5.1.slim.js"
+			  integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+			  crossorigin="anonymous"></script>
+        
+  <script>
+$('#sign').on('click',function(){
+    $("#staticBackdrop").modal('show');
+})
+
+</script>
+{% include 'modal_signin.html' %}
 </body>
 </html>
