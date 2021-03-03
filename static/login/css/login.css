@@ -34,8 +34,10 @@ figure {
     height: 32px;
 }
 #logoModal {
-    width: 40px;
-    height: 32px;
+    width: 30px;
+    height: 25px;
+    left: 250px;
+    position: relative;
 }
 .right {
     position: fixed;
@@ -105,6 +107,9 @@ li a:hover {
     background-color: black;
     border-radius: 15px;
     color: white;
+    width: 600px;
+    height: 650px;
+    display: block ruby;
 }
 .modal-backdrop {
     background-color: #6c6969;
@@ -121,4 +126,8 @@ li a:hover {
 .birth {
     display: block ruby;
     padding: 5px;
+}
+#next {
+    position: relative;
+    float: right;
 }
