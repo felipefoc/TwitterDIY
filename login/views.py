@@ -11,8 +11,7 @@ class LoginHome(View):
      
     def get(self, request):
         form = self.form_class(initial=self.initial)
-        for field in form:
-            print(field)
+        
         return render(request, self.template_name, {'form' : form})
 
     

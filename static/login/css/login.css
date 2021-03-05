@@ -111,6 +111,10 @@ li a:hover {
     height: 650px;
     display: block ruby;
 }
+
+.modal_body {
+    padding: 15px;
+}
 .modal-backdrop {
     background-color: #6c6969;
 }
@@ -130,4 +134,10 @@ li a:hover {
 #next {
     position: relative;
     float: right;
+}
+#buttons {
+    margin-top: 45px;
+}
+#name {
+    margin-bottom: 20px;
 }

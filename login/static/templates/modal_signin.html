@@ -3,18 +3,22 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="{% static 'login/images/twitter.png' %}" id="logoModal"><button class="btn btn-primary" id="next">Next</button>
-        <br>
-        <h2>Create your account</h2>
-        <form>
-            <input class="form-control form-control-lg" type="text" placeholder="Name" aria-label=".form-control-lg example">
-            <input class="form-control form-control-lg" type="text" placeholder="Email" aria-label=".form-control-lg example">
-            <p>Date of birth</p>
-            <p>This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</p><br>
-            <div class="birth">
-              {{form.birth_date}}
+        <div class="container">
+          <img src="{% static 'login/images/twitter.png' %}" id="logoModal"><button class="btn btn-primary" id="next">Next</button>
+          <br>
+          <h3>Create your account</h3>
+          <form>
+            <div id="buttons">
+              <input class="form-control form-control-lg" type="text" placeholder="Name" aria-label=".form-control-lg example" id="name">
+              <input class="form-control form-control-lg" type="text" placeholder="Email" aria-label=".form-control-lg example">
             </div>
-        </form>
+              <p>Date of birth</p>
+              <p>This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</p><br>
+              <div class="birth">
+                {{form.birth_date}}
+              </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
